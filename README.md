@@ -23,6 +23,7 @@ This framework is built using the **API Object Model** (similar to Page Object M
 
 ## 📂 Project Structure
 
+```text
 Stripe-API-Test-Automation/
 ├── api/                  # API Object Layer (Stripe endpoints)
 ├── core/                 # Core HTTP Client (Session & Auth management)
@@ -35,19 +36,31 @@ Stripe-API-Test-Automation/
 ├── run_tests.py          # Custom execution engine
 ├── pytest.ini            # Framework configurations
 └── requirements.txt      # Project dependencies
+```
 
 ## ⚙️ How to Run Locally
 
 **1. Clone the repository and install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
 **2. Setup your Environment Variables:**
-Create a .env file in the root directory and add your Stripe Test Key:
+Create a `.env` file in the root directory and add your Stripe Test Key:
+```env
 STRIPE_SECRET_KEY=sk_test_your_key_here
-BASE_URL=[https://api.stripe.com/v1](https://api.stripe.com/v1)
+BASE_URL=https://api.stripe.com/v1
+```
 
 **3. Run the Automation Suite:**
+```bash
 python run_tests.py
+```
 
 **4. View the Allure Report:**
+```bash
 allure serve reports/allure-results/YYYY-MM-DD/HH-MM-SS
+```
+
+---
+*Created as a demonstration of Quality Assurance Automation Engineering.*
