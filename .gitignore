@@ -1,0 +1,15 @@
+# Security
+.env
+
+# Virtual Environment
+venv/
+env/
+
+# Pytest & Python Cache
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Test Reports
+allure-results/
+reports/
