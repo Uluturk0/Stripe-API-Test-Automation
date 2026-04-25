@@ -3,3 +3,4 @@ requests==2.31.0
 pydantic==2.6.4
 faker==24.4.0
 allure-pytest==2.13.5
+python-dotenv==1.0.1
